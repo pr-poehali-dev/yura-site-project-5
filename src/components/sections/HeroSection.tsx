@@ -7,7 +7,7 @@ export default function HeroSection() {
   
   const slides = [
     {
-      image: '/img/00077b32-e346-42e5-9a4e-b4d045345c87.jpg',
+      image: '/img/09bef921-704b-40eb-8133-60985bad8e06.jpg',
       title: 'Подари любовь бездомному питомцу',
       description: 'Каждое животное заслуживает дом, заботу и любовь. Помогите нам дать им второй шанс на счастливую жизнь',
       buttons: [
