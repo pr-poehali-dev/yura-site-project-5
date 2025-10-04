@@ -205,7 +205,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/60d89f38-0c8c-447d-9e1c-0c5e16e47f4a.jpg" alt="Овчарка" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/fbefbd63-bd25-47e9-a578-fbc28d9cf853.jpg" alt="Овчарка" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Овчарка</h3>
@@ -213,7 +213,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/f214b6a4-408e-4845-a2b5-04a9685b7e46.jpg" alt="Лабрадор" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/f9306b16-530c-4119-9cbf-d0a00743b660.jpg" alt="Лабрадор" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Лабрадор</h3>
@@ -221,7 +221,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/a0e0e45f-88ca-421e-acbe-bdb22fb78fe8.jpg" alt="Хаски" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/cc5653ef-11bd-4033-b8a9-b692846bf400.jpg" alt="Хаски" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Хаски</h3>
@@ -229,7 +229,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/5e0a9a0f-4e00-4ee0-b6df-c0b2a1e00e6a.jpg" alt="Доберман" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/68f6a870-7027-454a-a7b1-ffefa7e8ca67.jpg" alt="Доберман" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Доберман</h3>
@@ -251,7 +251,7 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/71ebb17a-7aa8-4f16-a313-7bcd0c8ebe4e.jpg" alt="Чихуахуа" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/832d17d8-d37d-4b7a-8351-0b4936bbcc95.jpg" alt="Чихуахуа" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Чихуахуа</h3>
@@ -259,7 +259,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/2b59267c-89d4-4d12-80e9-91f77c94be42.jpg" alt="Померанский шпиц" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/408f2ad1-fa63-45e1-9018-957330f680d3.jpg" alt="Померанский шпиц" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Померанский шпиц</h3>
@@ -267,7 +267,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/9ab92e8d-c0c3-4a06-a265-c1ce8df0c959.jpg" alt="Йоркширский терьер" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/01775cd3-4c2d-4139-a3fe-2b3ebbdba1f1.jpg" alt="Йоркширский терьер" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Йоркширский терьер</h3>
@@ -275,7 +275,7 @@ export default function Index() {
             </Card>
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden">
-                <img src="/img/7ee32494-a61b-48aa-8c94-3a05b0fd5cc0.jpg" alt="Такса" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                <img src="/img/ebd875d1-c2b1-4c86-856f-469103e45e49.jpg" alt="Такса" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
               </div>
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Такса</h3>
