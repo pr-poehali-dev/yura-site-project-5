@@ -703,7 +703,27 @@ export default function Index() {
           <h2 className="text-4xl font-bold text-center mb-4">Новости приюта</h2>
           <p className="text-center text-muted-foreground mb-12">Последние события и истории спасения наших питомцев</p>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img src="/img/6ceb81f3-d921-42f3-8667-5932fa8d833e.jpg" alt="Новость" className="w-full h-full object-cover" />
+                <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  02 Октября 2025
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">Юные волонтеры подарили радость нашим питомцам</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Группа подростков-волонтеров посетила приют и провела замечательный день с нашими собаками и кошками. 
+                  Ребята принесли корм, игрушки и уютные лежанки. Спасибо за доброту и заботу!
+                </p>
+                <Button variant="outline" className="rounded-full w-full">
+                  <Icon name="ArrowRight" size={16} className="mr-2" />
+                  Читать далее
+                </Button>
+              </CardContent>
+            </Card>
+
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg" alt="Новость" className="w-full h-full object-cover" />
