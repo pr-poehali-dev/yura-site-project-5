@@ -152,6 +152,186 @@ const animals: Animal[] = [
     type: 'cat',
     description: 'Изящный сиамский кот с пронзительными голубыми глазами. Разговорчивый и преданный компаньон',
     image: '/img/ab8e9544-3729-4576-9477-0c5d49a889cc.jpg'
+  },
+  {
+    name: 'Рекс',
+    gender: 'мальчик',
+    age: '6 лет',
+    breed: 'Ротвейлер',
+    type: 'dog',
+    description: 'Верный охранник с мягким характером. Отлично дрессирован, идеален для частного дома',
+    image: '/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg'
+  },
+  {
+    name: 'Снежинка',
+    gender: 'девочка',
+    age: '1 год',
+    breed: 'Турецкая ангора',
+    type: 'cat',
+    description: 'Белоснежная красавица с пушистым хвостом. Очень игривая и общительная',
+    image: '/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg'
+  },
+  {
+    name: 'Бим',
+    gender: 'мальчик',
+    age: '9 месяцев',
+    breed: 'Джек-рассел-терьер',
+    type: 'dog',
+    description: 'Маленький энерджайзер! Обожает активные игры и длительные прогулки',
+    image: '/img/f175e0fd-9f04-47f1-89f0-163df9b70e70.jpg'
+  },
+  {
+    name: 'Василиса',
+    gender: 'девочка',
+    age: '2 года',
+    breed: 'Мейн-кун',
+    type: 'cat',
+    description: 'Крупная кошка с добрым нравом. Любит детей и спокойную домашнюю атмосферу',
+    image: '/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg'
+  },
+  {
+    name: 'Тайсон',
+    gender: 'мальчик',
+    age: '4 года',
+    breed: 'Американский стаффорд',
+    type: 'dog',
+    description: 'Мощный, но очень дружелюбный пес. Нуждается в опытном хозяине',
+    image: '/img/0ed6522c-6ff1-41c6-bbf6-cf705b007d88.jpg'
+  },
+  {
+    name: 'Багира',
+    gender: 'девочка',
+    age: '3 года',
+    breed: 'Бомбейская кошка',
+    type: 'cat',
+    description: 'Черная пантера в миниатюре. Грациозная, умная и преданная',
+    image: '/img/da30717b-7e57-4b78-ac3e-2e5456457d18.jpg'
+  },
+  {
+    name: 'Арчи',
+    gender: 'мальчик',
+    age: '1 год',
+    breed: 'Золотистый ретривер',
+    type: 'dog',
+    description: 'Солнечный и добрейший пес. Обожает всех людей и отлично ладит с детьми',
+    image: '/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg'
+  },
+  {
+    name: 'Марта',
+    gender: 'девочка',
+    age: '5 месяцев',
+    breed: 'Шотландская вислоухая',
+    type: 'cat',
+    description: 'Милая котенок с забавными ушками. Ласковая и игривая малышка',
+    image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
+  },
+  {
+    name: 'Барон',
+    gender: 'мальчик',
+    age: '8 лет',
+    breed: 'Доберман',
+    type: 'dog',
+    description: 'Благородный и интеллигентный пес. Отличный сторож и верный друг',
+    image: '/img/0ed6522c-6ff1-41c6-bbf6-cf705b007d88.jpg'
+  },
+  {
+    name: 'Марсель',
+    gender: 'мальчик',
+    age: '6 месяцев',
+    breed: 'Русская голубая',
+    type: 'cat',
+    description: 'Серебристый котенок с изумрудными глазами. Спокойный и ненавязчивый',
+    image: '/img/ab8e9544-3729-4576-9477-0c5d49a889cc.jpg'
+  },
+  {
+    name: 'Белла',
+    gender: 'девочка',
+    age: '2 года',
+    breed: 'Кавалер кинг чарльз спаниель',
+    type: 'dog',
+    description: 'Элегантная собачка с шелковистой шерстью. Очень ласковая и компанейская',
+    image: '/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg'
+  },
+  {
+    name: 'Оскар',
+    gender: 'мальчик',
+    age: '7 месяцев',
+    breed: 'Абиссинская кошка',
+    type: 'cat',
+    description: 'Активный и любознательный котенок. Обожает высоту и исследования',
+    image: '/img/615eef6d-f674-4035-8c0f-a295aad24446.jpg'
+  },
+  {
+    name: 'Норд',
+    gender: 'мальчик',
+    age: '3 года',
+    breed: 'Аляскинский маламут',
+    type: 'dog',
+    description: 'Мощный северный красавец. Дружелюбный к людям, любит холод и снег',
+    image: '/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg'
+  },
+  {
+    name: 'Клео',
+    gender: 'девочка',
+    age: '1 год',
+    breed: 'Сфинкс',
+    type: 'cat',
+    description: 'Необычная кошечка без шерсти. Очень теплая и ласковая, любит обниматься',
+    image: '/img/1c83f061-e6a6-478a-b1c4-e2439fca08ce.jpg'
+  },
+  {
+    name: 'Макс',
+    gender: 'мальчик',
+    age: '4 года',
+    breed: 'Боксер',
+    type: 'dog',
+    description: 'Веселый и энергичный пес с добрым сердцем. Обожает играть и дурачиться',
+    image: '/img/7e0e92da-b8ea-4c55-a2a3-c5c0b548975e.jpg'
+  },
+  {
+    name: 'Изабелла',
+    gender: 'девочка',
+    age: '5 лет',
+    breed: 'Рэгдолл',
+    type: 'cat',
+    description: 'Спокойная кошка с голубыми глазами. Любит лежать на руках и мурлыкать',
+    image: '/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg'
+  },
+  {
+    name: 'Граф',
+    gender: 'мальчик',
+    age: '6 лет',
+    breed: 'Немецкий дог',
+    type: 'dog',
+    description: 'Гигант с благородными манерами. Несмотря на размер, очень нежный и спокойный',
+    image: '/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg'
+  },
+  {
+    name: 'Жасмин',
+    gender: 'девочка',
+    age: '8 месяцев',
+    breed: 'Бенгальская кошка',
+    type: 'cat',
+    description: 'Дикая красота с леопардовым окрасом. Активная, игривая и очень умная',
+    image: '/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg'
+  },
+  {
+    name: 'Тедди',
+    gender: 'мальчик',
+    age: '10 месяцев',
+    breed: 'Йоркширский терьер',
+    type: 'dog',
+    description: 'Маленький модник с шелковистой шерстью. Храбрый малыш с большим сердцем',
+    image: '/img/3c640813-1848-48ec-846a-8febfd945d67.jpg'
+  },
+  {
+    name: 'Мила',
+    gender: 'девочка',
+    age: '2 года',
+    breed: 'Корниш-рекс',
+    type: 'cat',
+    description: 'Кудрявая красавица с необычной шерстью. Ласковая и общительная',
+    image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
   }
 ];
 
@@ -224,15 +404,11 @@ export default function Index() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [animalFilter, setAnimalFilter] = useState<'all' | 'dog' | 'cat'>('all');
-  const [searchQuery, setSearchQuery] = useState('');
   const [selectedAnimal, setSelectedAnimal] = useState<Animal | null>(null);
   const [adoptionForm, setAdoptionForm] = useState({ name: '', phone: '', email: '', address: '', reason: '' });
 
   const filteredAnimals = animals.filter(animal => {
-    const matchesFilter = animalFilter === 'all' || animal.type === animalFilter;
-    const matchesSearch = animal.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                         animal.breed.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesFilter && matchesSearch;
+    return animalFilter === 'all' || animal.type === animalFilter;
   });
 
   return (
@@ -247,12 +423,9 @@ export default function Index() {
             <div className="hidden md:flex gap-6 items-center">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
               <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
-              <a href="#testimonials" className="hover:text-primary transition-colors">Отзывы</a>
-              <a href="#help" className="hover:text-primary transition-colors">Как помочь</a>
-              <a href="#requirements" className="hover:text-primary transition-colors">Требования</a>
-              <a href="#schedule" className="hover:text-primary transition-colors">График</a>
-              <a href="#about" className="hover:text-primary transition-colors">О приюте</a>
-              <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
+              <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
+              <a href="#news" className="hover:text-primary transition-colors">Новости</a>
+              <a href="#help" className="hover:text-primary transition-colors">Помощь</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
               <Button 
                 className="rounded-full bg-primary text-white hover:bg-primary/90 flex items-center gap-2"
@@ -275,12 +448,9 @@ export default function Index() {
             <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
               <a href="#home" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Главная</a>
               <a href="#animals" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Воспитанники</a>
-              <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Отзывы</a>
-              <a href="#help" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Как помочь</a>
-              <a href="#requirements" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Требования</a>
-              <a href="#schedule" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">График</a>
-              <a href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">О приюте</a>
-              <a href="#services" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Услуги</a>
+              <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Галерея</a>
+              <a href="#news" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Новости</a>
+              <a href="#help" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Помощь</a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Контакты</a>
             </div>
           </div>
@@ -341,55 +511,30 @@ export default function Index() {
           <h2 className="text-4xl font-bold text-center mb-4">Воспитанники приюта</h2>
           <p className="text-center text-muted-foreground mb-8">Любой желающий может забрать к себе животное из приюта</p>
           
-          <div className="flex flex-col md:flex-row gap-4 mb-8 justify-center items-center">
-            <div className="flex gap-2">
-              <Button 
-                variant={animalFilter === 'all' ? 'default' : 'outline'}
-                onClick={() => setAnimalFilter('all')}
-                className="rounded-full"
-              >
-                <Icon name="PawPrint" size={18} className="mr-2" />
-                Все ({animals.length})
-              </Button>
-              <Button 
-                variant={animalFilter === 'dog' ? 'default' : 'outline'}
-                onClick={() => setAnimalFilter('dog')}
-                className="rounded-full"
-              >
-                🐕 Собаки ({animals.filter(a => a.type === 'dog').length})
-              </Button>
-              <Button 
-                variant={animalFilter === 'cat' ? 'default' : 'outline'}
-                onClick={() => setAnimalFilter('cat')}
-                className="rounded-full"
-              >
-                🐈 Кошки ({animals.filter(a => a.type === 'cat').length})
-              </Button>
-            </div>
-            <div className="relative w-full md:w-64">
-              <Icon name="Search" size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
-              <Input 
-                placeholder="Поиск по имени или породе..." 
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 rounded-full"
-              />
-            </div>
+          <div className="flex gap-2 mb-8 justify-center">
+            <Button 
+              variant={animalFilter === 'all' ? 'default' : 'outline'}
+              onClick={() => setAnimalFilter('all')}
+              className="rounded-full"
+            >
+              <Icon name="PawPrint" size={18} className="mr-2" />
+              Все ({animals.length})
+            </Button>
+            <Button 
+              variant={animalFilter === 'dog' ? 'default' : 'outline'}
+              onClick={() => setAnimalFilter('dog')}
+              className="rounded-full"
+            >
+              🐕 Собаки ({animals.filter(a => a.type === 'dog').length})
+            </Button>
+            <Button 
+              variant={animalFilter === 'cat' ? 'default' : 'outline'}
+              onClick={() => setAnimalFilter('cat')}
+              className="rounded-full"
+            >
+              🐈 Кошки ({animals.filter(a => a.type === 'cat').length})
+            </Button>
           </div>
-
-          {filteredAnimals.length === 0 && (
-            <div className="text-center py-12">
-              <Icon name="Search" size={48} className="mx-auto text-muted-foreground mb-4" />
-              <p className="text-lg text-muted-foreground">Животные не найдены</p>
-              <Button 
-                variant="outline" 
-                className="mt-4 rounded-full"
-                onClick={() => { setSearchQuery(''); setAnimalFilter('all'); }}
-              >
-                Сбросить фильтры
-              </Button>
-            </div>
-          )}
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAnimals.map((animal, index) => (
@@ -573,6 +718,117 @@ export default function Index() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Галерея приюта</h2>
+          <p className="text-center text-muted-foreground mb-12">Загляните в нашу жизнь - посмотрите, как живут наши питомцы</p>
+          
+          <div className="grid md:grid-cols-3 gap-4 mb-4">
+            <div className="relative h-64 rounded-2xl overflow-hidden group">
+              <img src="/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg" alt="Вольеры для собак" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                <p className="text-white font-semibold">Вольеры для собак</p>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden group">
+              <img src="/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg" alt="Комната для кошек" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                <p className="text-white font-semibold">Комната для кошек</p>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden group">
+              <img src="/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg" alt="Площадка для выгула" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                <p className="text-white font-semibold">Площадка для выгула</p>
+              </div>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="relative h-64 rounded-2xl overflow-hidden group">
+              <img src="/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg" alt="Ветеринарный кабинет" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                <p className="text-white font-semibold">Ветеринарный кабинет</p>
+              </div>
+            </div>
+            <div className="relative h-64 rounded-2xl overflow-hidden group">
+              <img src="/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg" alt="Игровая зона" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                <p className="text-white font-semibold">Игровая зона</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Новости приюта</h2>
+          <p className="text-center text-muted-foreground mb-12">Последние события и истории спасения наших питомцев</p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img src="/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg" alt="Новость" className="w-full h-full object-cover" />
+                <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  01 Октября 2024
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">Спасли 5 щенков из подвала</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Волонтеры приюта спасли пятерых щенков, которые были найдены в заброшенном подвале. 
+                  Все малыши здоровы и скоро будут готовы к усыновлению!
+                </p>
+                <Button variant="outline" className="rounded-full w-full">
+                  <Icon name="ArrowRight" size={16} className="mr-2" />
+                  Читать далее
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img src="/img/2916cc7b-5829-4598-a0a0-46cae2264678.jpg" alt="Новость" className="w-full h-full object-cover" />
+                <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  25 Сентября 2024
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">День открытых дверей - успех!</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  В минувшие выходные мы провели день открытых дверей. Приют посетило более 100 человек, 
+                  и 12 питомцев обрели новый дом!
+                </p>
+                <Button variant="outline" className="rounded-full w-full">
+                  <Icon name="ArrowRight" size={16} className="mr-2" />
+                  Читать далее
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 overflow-hidden">
+                <img src="/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg" alt="Новость" className="w-full h-full object-cover" />
+                <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  15 Сентября 2024
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-3">Новое оборудование для клиники</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Благодаря вашей помощи мы закупили современное ветеринарное оборудование. 
+                  Теперь мы сможем проводить больше операций прямо в приюте!
+                </p>
+                <Button variant="outline" className="rounded-full w-full">
+                  <Icon name="ArrowRight" size={16} className="mr-2" />
+                  Читать далее
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
