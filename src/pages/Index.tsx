@@ -298,7 +298,7 @@ export default function Index() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Icon name="PawPrint" className="text-primary" size={32} />
-              <span className="text-2xl font-bold text-primary">Приют для животных</span>
+              <span className="text-2xl font-bold text-primary">Второй дом</span>
             </div>
             <div className="hidden md:flex gap-6 items-center">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
@@ -1356,9 +1356,9 @@ export default function Index() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="PawPrint" size={32} />
-                <span className="text-xl font-bold">Приют для животных</span>
+                <span className="text-xl font-bold">Второй дом</span>
               </div>
-              <p className="text-gray-400">Помогаем бездомным животным обрести дом и любящую семью. Наш проект только начинается!</p>
+              <p className="text-gray-400">Помогаем бездомным животным обрести второй дом и любящую семью. Каждое животное заслуживает любви!</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Навигация</h4>
