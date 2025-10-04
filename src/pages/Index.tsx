@@ -5,7 +5,7 @@ import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import { animals } from '@/data/animalsData';
-import { testimonials, newsItems, helpItems, services, galleryImages, faqItems } from '@/data/staticData';
+import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -280,6 +280,70 @@ export default function Index() {
               <CardContent className="p-4 text-center">
                 <h3 className="font-bold text-lg">Такса</h3>
               </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Volunteer Section */}
+      <section id="volunteer" className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Как стать волонтером</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Присоединяйтесь к нашей команде и помогайте бездомным животным найти дом!
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {volunteerRequirements.map((req, index) => (
+              <Card key={index} className="p-6 hover:shadow-xl transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                    <Icon name={req.icon as any} size={24} className="text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">{req.title}</h3>
+                    <p className="text-sm text-muted-foreground">{req.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Card className="p-8 max-w-3xl mx-auto bg-primary/5">
+              <h3 className="text-2xl font-bold mb-4">Чем занимаются волонтеры?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left mb-6">
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Прогулки и игры с собаками</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Уход за кошками, игры с котятами</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Помощь в уборке и кормлении</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Фотосъемка животных для пристройства</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Помогать на мероприятиях и выставках</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                  <p className="text-muted-foreground">Социализация и обучение питомцев</p>
+                </div>
+              </div>
+              <Button size="lg" className="rounded-full gap-2">
+                <Icon name="UserPlus" size={20} />
+                Заполнить анкету волонтера
+              </Button>
             </Card>
           </div>
         </div>
