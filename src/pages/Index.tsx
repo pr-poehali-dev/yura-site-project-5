@@ -5,7 +5,7 @@ import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import { animals } from '@/data/animalsData';
-import { testimonials, newsItems, helpItems, services, galleryImages } from '@/data/staticData';
+import { testimonials, newsItems, helpItems, services, galleryImages, faqItems } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -193,6 +193,122 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Big Breeds Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Большие породы</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Крупные и верные питомцы
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/60d89f38-0c8c-447d-9e1c-0c5e16e47f4a.jpg" alt="Овчарка" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Овчарка</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/f214b6a4-408e-4845-a2b5-04a9685b7e46.jpg" alt="Лабрадор" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Лабрадор</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/a0e0e45f-88ca-421e-acbe-bdb22fb78fe8.jpg" alt="Хаски" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Хаски</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/5e0a9a0f-4e00-4ee0-b6df-c0b2a1e00e6a.jpg" alt="Доберман" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Доберман</h3>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Small Breeds Section */}
+      <section className="py-20 px-4 bg-secondary/10">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Маленькие породы</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Компактные и милые питомцы
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/71ebb17a-7aa8-4f16-a313-7bcd0c8ebe4e.jpg" alt="Чихуахуа" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Чихуахуа</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/2b59267c-89d4-4d12-80e9-91f77c94be42.jpg" alt="Померанский шпиц" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Померанский шпиц</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/9ab92e8d-c0c3-4a06-a265-c1ce8df0c959.jpg" alt="Йоркширский терьер" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Йоркширский терьер</h3>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="aspect-square overflow-hidden">
+                <img src="/img/7ee32494-a61b-48aa-8c94-3a05b0fd5cc0.jpg" alt="Такса" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+              </div>
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold text-lg">Такса</h3>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Часто задаваемые вопросы</h2>
+            <p className="text-xl text-muted-foreground">
+              Ответы на популярные вопросы о приюте и усыновлении
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            {faqItems.map((faq, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
+                  <Icon name="HelpCircle" size={24} className="text-primary flex-shrink-0 mt-0.5" />
+                  {faq.question}
+                </h3>
+                <p className="text-muted-foreground pl-8">{faq.answer}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* News Section */}
       <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-7xl">
@@ -235,7 +351,7 @@ export default function Index() {
                   <Icon name="MapPin" size={24} className="text-primary mt-1" />
                   <div>
                     <p className="font-semibold">Адрес:</p>
-                    <p className="text-muted-foreground">г. Екатеринбург, Чкаловский район</p>
+                    <p className="text-muted-foreground">г. Екатеринбург, Чкаловский район, 11</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -256,7 +372,7 @@ export default function Index() {
                   <Icon name="Clock" size={24} className="text-primary mt-1" />
                   <div>
                     <p className="font-semibold">Режим работы:</p>
-                    <p className="text-muted-foreground">Ежедневно с 10:00 до 18:00</p>
+                    <p className="text-muted-foreground">Ежедневно с 10:00 до 19:00</p>
                   </div>
                 </div>
               </div>
@@ -264,11 +380,11 @@ export default function Index() {
             
             <div className="h-96 lg:h-auto rounded-lg overflow-hidden">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c8b6f8e8f8e8f8e8f8e8f8e8f8e8f8e&amp;source=constructor"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Adfb0ad7c8c8f8e8e8f8e8f8e8f8e8f8e&amp;source=constructor&amp;ll=60.597465%2C56.838011&amp;z=12"
                 width="100%"
                 height="100%"
                 frameBorder="0"
-                title="Карта приюта"
+                title="Карта приюта - Екатеринбург, Чкаловский район"
                 className="w-full h-full"
               />
             </div>
