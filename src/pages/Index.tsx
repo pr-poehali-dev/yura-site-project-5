@@ -5,7 +5,7 @@ import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import { animals } from '@/data/animalsData';
-import { testimonials, newsItems, helpItems, services } from '@/data/staticData';
+import { testimonials, newsItems, helpItems, services, galleryImages } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -164,6 +164,35 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Галерея</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Жизнь нашего приюта: стрижка, купание и игры с питомцами
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((item, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* News Section */}
       <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-7xl">
@@ -184,6 +213,65 @@ export default function Index() {
                 image={news.image}
               />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section with Map */}
+      <section id="contact" className="py-20 px-4 bg-secondary/20">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Контакты</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Приезжайте к нам в гости!
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6">Наш адрес</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="MapPin" size={24} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-semibold">Адрес:</p>
+                    <p className="text-muted-foreground">г. Екатеринбург, Чкаловский район</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Phone" size={24} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-semibold">Телефон:</p>
+                    <p className="text-muted-foreground">+7 (343) 123-45-67</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Mail" size={24} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-semibold">Email:</p>
+                    <p className="text-muted-foreground">info@vtoroydom.ru</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Clock" size={24} className="text-primary mt-1" />
+                  <div>
+                    <p className="font-semibold">Режим работы:</p>
+                    <p className="text-muted-foreground">Ежедневно с 10:00 до 18:00</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+            
+            <div className="h-96 lg:h-auto rounded-lg overflow-hidden">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A9c8b6f8e8f8e8f8e8f8e8f8e8f8e8f8e&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Карта приюта"
+                className="w-full h-full"
+              />
+            </div>
           </div>
         </div>
       </section>
