@@ -547,26 +547,23 @@ export default function Index() {
 
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Icon name="Cat" className="text-primary" size={28} />
-                Наши кошки
+                <Icon name="Stethoscope" className="text-primary" size={28} />
+                Ветеринарный кабинет
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/14c90348-33cf-4d69-bcfc-fc6beae2741b.jpg" alt="Британская кошка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg" alt="Ветеринарный кабинет" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/aae188a3-b1ec-46dd-84d9-6951afa5c2fe.jpg" alt="Вакцинация" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Британская кошка</p>
+                    <p className="text-white font-semibold">Вакцинация животных</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/bd755f0a-0e80-4878-b81c-b38464a3d498.jpg" alt="Мейн-кун" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/9ff0f5b1-f4d0-4abb-8aa0-000bf99314d7.jpg" alt="Купание собаки" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Мейн-кун</p>
-                  </div>
-                </div>
-                <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/26905823-79b6-44ba-b54a-b3530039bd58.jpg" alt="Персидская кошка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Персидская кошка</p>
+                    <p className="text-white font-semibold">Купание и гигиена</p>
                   </div>
                 </div>
               </div>
@@ -574,26 +571,26 @@ export default function Index() {
 
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Icon name="Dog" className="text-primary" size={28} />
-                Наши собаки
+                <Icon name="Scissors" className="text-primary" size={28} />
+                Груминг и уход
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/e5a0620c-c1e8-4e99-88d7-79f19a7da9fd.jpg" alt="Золотистый ретривер" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/df26d611-d53a-4dc5-abdd-4caf525946c4.jpg" alt="Стрижка шерсти" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Золотистый ретривер</p>
+                    <p className="text-white font-semibold">Стрижка шерсти</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/b545cd6a-44bf-4d8b-905a-87b68ced0b8b.jpg" alt="Хаски" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/d2b51569-4f92-409f-9270-5f6a5fef05bd.jpg" alt="Подстригание когтей" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Сибирский хаски</p>
+                    <p className="text-white font-semibold">Подстригание когтей</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/c2742fac-2efc-47e0-abdc-d40a936e04f7.jpg" alt="Немецкая овчарка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/6712d14d-797d-4287-813c-6fd126fab68a.jpg" alt="Расчесывание" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Немецкая овчарка</p>
+                    <p className="text-white font-semibold">Расчесывание длинношерстных</p>
                   </div>
                 </div>
               </div>
@@ -604,7 +601,7 @@ export default function Index() {
                 <Icon name="Sparkles" className="text-primary" size={28} />
                 Маленькие породы
               </h3>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-4 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
                   <img src="/img/d304cdcd-3265-4e00-8b6e-fabb84744335.jpg" alt="Йоркширский терьер" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
@@ -615,6 +612,36 @@ export default function Index() {
                   <img src="/img/ebc0c6f8-a06b-4baf-97d2-ecb5f59d0607.jpg" alt="Мопс" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
                     <p className="text-white font-semibold">Мопс</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/4b5ea163-d742-4ba2-96b2-3a42d85e4f98.jpg" alt="Чихуахуа" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Чихуахуа</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/25443a73-8b21-476a-83f6-476b92d89531.jpg" alt="Померанский шпиц" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Померанский шпиц</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Heart" className="text-primary" size={28} />
+                Игровая зона
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg" alt="Игровая зона" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/71ff36a3-9cb2-46c1-b4bf-36dd78f6f256.jpg" alt="Игры и социализация" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Игры и социализация</p>
                   </div>
                 </div>
               </div>
@@ -800,7 +827,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="testimonials" className="py-20 px-4 bg-secondary/30">
+      <section id="testimonials" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Истории наших друзей</h2>
           <p className="text-center text-muted-foreground mb-12">Счастливые истории усыновления питомцев</p>
