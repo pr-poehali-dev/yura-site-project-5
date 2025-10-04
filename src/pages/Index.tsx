@@ -19,13 +19,103 @@ interface Animal {
 
 const animals: Animal[] = [
   {
-    name: 'Шарик',
+    name: 'Барни',
+    gender: 'мальчик',
+    age: '2 года',
+    breed: 'Бигль',
+    type: 'dog',
+    description: 'Дружелюбный бигль с отличным нюхом. Любит исследовать окрестности и играть с другими собаками',
+    image: '/img/fefd022b-19d2-4fe9-aaaf-cdbee8ba161c.jpg'
+  },
+  {
+    name: 'Рекс',
     gender: 'мальчик',
     age: '3 года',
+    breed: 'Доберман',
+    type: 'dog',
+    description: 'Элегантный и благородный охранник. Умный, верный и преданный своей семье',
+    image: '/img/511f159e-162a-42da-9892-75d7083c8edb.jpg'
+  },
+  {
+    name: 'Тиша',
+    gender: 'девочка',
+    age: '1 год',
+    breed: 'Йоркширский терьер',
+    type: 'dog',
+    description: 'Маленькая модница с шелковистой шерстью. Энергичная и ласковая, идеальна для квартиры',
+    image: '/img/d304cdcd-3265-4e00-8b6e-fabb84744335.jpg'
+  },
+  {
+    name: 'Макс',
+    gender: 'мальчик',
+    age: '4 года',
+    breed: 'Такса',
+    type: 'dog',
+    description: 'Забавный длинный песик с короткими лапками. Любопытный охотник и верный друг',
+    image: '/img/6b043f38-99ed-4e16-9f6a-2dc86a8d1822.jpg'
+  },
+  {
+    name: 'Чарли',
+    gender: 'мальчик',
+    age: '3 года',
+    breed: 'Мопс',
+    type: 'dog',
+    description: 'Очаровательный мопс с забавной мордочкой. Ласковый, спокойный и обожает детей',
+    image: '/img/ebc0c6f8-a06b-4baf-97d2-ecb5f59d0607.jpg'
+  },
+  {
+    name: 'Шарик',
+    gender: 'мальчик',
+    age: '5 лет',
     breed: 'Немецкая овчарка',
     type: 'dog',
-    description: 'Умный и верный пёс, отлично ладит с детьми. Обожает долгие прогулки и игру с мячиком. Знает команды: сидеть, лежать, дай лапу',
-    image: '/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg'
+    description: 'Умный и верный пёс. Отлично ладит с детьми, знает команды: сидеть, лежать, дай лапу',
+    image: '/img/c2742fac-2efc-47e0-abdc-d40a936e04f7.jpg'
+  },
+  {
+    name: 'Бадди',
+    gender: 'мальчик',
+    age: '2 года',
+    breed: 'Лабрадор',
+    type: 'dog',
+    description: 'Добрейший лабрадор с золотым характером. Обожает плавать и приносить игрушки',
+    image: '/img/b637eecb-6b01-49e2-a45d-e92ad28dc4a4.jpg'
+  },
+  {
+    name: 'Люси',
+    gender: 'девочка',
+    age: '1 год',
+    breed: 'Пудель',
+    type: 'dog',
+    description: 'Элегантный белоснежный пудель. Умная, легко обучаемая и очень общительная',
+    image: '/img/ff92b4f4-16f2-4dc1-adba-9ea77dd8e442.jpg'
+  },
+  {
+    name: 'Луна',
+    gender: 'девочка',
+    age: '8 месяцев',
+    breed: 'Хаски',
+    type: 'dog',
+    description: 'Очаровательная хаски с голубыми глазами. Активная, любит бегать и играть в снегу',
+    image: '/img/b545cd6a-44bf-4d8b-905a-87b68ced0b8b.jpg'
+  },
+  {
+    name: 'Голди',
+    gender: 'девочка',
+    age: '3 года',
+    breed: 'Золотистый ретривер',
+    type: 'dog',
+    description: 'Солнечная красавица с золотистой шерстью. Добрейшая душа, обожает всех людей',
+    image: '/img/e5a0620c-c1e8-4e99-88d7-79f19a7da9fd.jpg'
+  },
+  {
+    name: 'Василий',
+    gender: 'мальчик',
+    age: '2 года',
+    breed: 'Британская короткошерстная',
+    type: 'cat',
+    description: 'Плюшевый британец с круглой мордочкой. Спокойный, независимый и очень милый',
+    image: '/img/14c90348-33cf-4d69-bcfc-fc6beae2741b.jpg'
   },
   {
     name: 'Мурка',
@@ -33,170 +123,80 @@ const animals: Animal[] = [
     age: '1 год',
     breed: 'Мейн-кун',
     type: 'cat',
-    description: 'Крупная кошка с добрым нравом и пушистой шерстью. Любит детей и спокойную домашнюю атмосферу',
-    image: '/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg'
+    description: 'Крупная кошка с добрым нравом и пушистой шерстью. Любит детей и спокойную атмосферу',
+    image: '/img/bd755f0a-0e80-4878-b81c-b38464a3d498.jpg'
   },
   {
-    name: 'Тузик',
+    name: 'Тигра',
     gender: 'мальчик',
-    age: '5 лет',
-    breed: 'Кавалер кинг чарльз спаниель',
-    type: 'dog',
-    description: 'Элегантная собачка с шелковистой шерстью. Очень ласковый и компанейский, идеален для семьи',
-    image: '/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg'
-  },
-  {
-    name: 'Василий',
-    gender: 'мальчик',
-    age: '3 месяца',
-    breed: 'Британская короткошерстная',
+    age: '1 год',
+    breed: 'Бенгальская кошка',
     type: 'cat',
-    description: 'Игривый котенок, полон энергии! Обожает играть с игрушками-мышками и гоняться за солнечными зайчиками',
-    image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
+    description: 'Маленький леопард с диким окрасом. Активный, игривый и очень красивый',
+    image: '/img/99a6cd9c-f443-4f76-b25f-cbfde4ff4d99.jpg'
   },
   {
-    name: 'Бусинка',
-    gender: 'девочка',
-    age: '6 месяцев',
-    breed: 'Мальтийская болонка',
-    type: 'dog',
-    description: 'Маленькая белоснежная собачка с добрым сердцем. Очень привязывается к людям, любит сидеть на ручках',
-    image: '/img/3c640813-1848-48ec-846a-8febfd945d67.jpg'
-  },
-  {
-    name: 'Рыжик',
+    name: 'Пушок',
     gender: 'мальчик',
-    age: '4 месяца',
-    breed: 'Метис',
-    type: 'dog',
-    description: 'Крохотный щенок с огромной любовью к жизни! Очень социальный, обожает знакомиться с новыми людьми и животными',
-    image: '/img/f175e0fd-9f04-47f1-89f0-163df9b70e70.jpg'
-  },
-  {
-    name: 'Грей',
-    gender: 'мальчик',
-    age: '7 лет',
-    breed: 'Стаффордширский терьер',
-    type: 'dog',
-    description: 'Мудрый и спокойный пес, прекрасный компаньон для размеренных прогулок. Очень терпелив и послушен',
-    image: '/img/0ed6522c-6ff1-41c6-bbf6-cf705b007d88.jpg'
-  },
-  {
-    name: 'Смокинг',
-    gender: 'мальчик',
-    age: '2 года',
-    breed: 'Европейская короткошерстная',
-    type: 'cat',
-    description: 'Элегантный черно-белый кот с аристократичными манерами. Любит вкусную еду и мягкие подушки',
-    image: '/img/da30717b-7e57-4b78-ac3e-2e5456457d18.jpg'
-  },
-  {
-    name: 'Дымка',
-    gender: 'девочка',
-    age: '2 месяца',
-    breed: 'Сфинкс',
-    type: 'cat',
-    description: 'Необычная кошечка без шерсти. Очень теплая и ласковая, любит обниматься и сидеть на руках',
-    image: '/img/1c83f061-e6a6-478a-b1c4-e2439fca08ce.jpg'
-  },
-  {
-    name: 'Джек',
-    gender: 'мальчик',
-    age: '8 месяцев',
-    breed: 'Лабрадор',
-    type: 'dog',
-    description: 'Энергичный щенок лабрадора, обожает плавать и приносить игрушки. Очень умный, быстро учится командам',
-    image: '/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg'
-  },
-  {
-    name: 'Пушинка',
-    gender: 'девочка',
     age: '3 года',
-    breed: 'Персидская',
+    breed: 'Сибирская кошка',
     type: 'cat',
-    description: 'Пушистая красавица-персиянка с королевскими манерами. Любит когда ее расчесывают и гладят',
-    image: '/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg'
-  },
-  {
-    name: 'Барни',
-    gender: 'мальчик',
-    age: '2 года',
-    breed: 'Бигль',
-    type: 'dog',
-    description: 'Дружелюбный бигль с отличным нюхом. Любит исследовать окрестности и играть с другими собаками',
-    image: '/img/7e0e92da-b8ea-4c55-a2a3-c5c0b548975e.jpg'
-  },
-  {
-    name: 'Персик',
-    gender: 'мальчик',
-    age: '5 лет',
-    breed: 'Рыжий дворовой',
-    type: 'cat',
-    description: 'Солнечный рыжий кот, очень ласковый и мурлыкающий. Отлично подходит для семей с детьми',
-    image: '/img/615eef6d-f674-4035-8c0f-a295aad24446.jpg'
-  },
-  {
-    name: 'Луна',
-    gender: 'девочка',
-    age: '5 месяцев',
-    breed: 'Сибирский хаски',
-    type: 'dog',
-    description: 'Очаровательная хаски с голубыми глазами. Активная, любит бегать и играть в снегу',
-    image: '/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg'
+    description: 'Пушистый сибиряк с богатой шубкой. Ласковый охотник и верный друг',
+    image: '/img/4ffe56e7-8984-4c4d-b0d9-3e552deb2b69.jpg'
   },
   {
     name: 'Сапфир',
     gender: 'мальчик',
-    age: '4 года',
-    breed: 'Сиамская',
+    age: '2 года',
+    breed: 'Сиамская кошка',
     type: 'cat',
-    description: 'Изящный сиамский кот с пронзительными голубыми глазами. Разговорчивый и преданный компаньон',
-    image: '/img/ab8e9544-3729-4576-9477-0c5d49a889cc.jpg'
+    description: 'Изящный сиамец с пронзительными голубыми глазами. Разговорчивый и преданный',
+    image: '/img/b3b466a2-3f22-4850-9f4f-b8dbfdf5debc.jpg'
   },
   {
-    name: 'Рекс',
+    name: 'Пушинка',
+    gender: 'девочка',
+    age: '4 года',
+    breed: 'Персидская кошка',
+    type: 'cat',
+    description: 'Пушистая красавица-персиянка с королевскими манерами. Любит расчесывание и ласку',
+    image: '/img/26905823-79b6-44ba-b54a-b3530039bd58.jpg'
+  },
+  {
+    name: 'Марсель',
     gender: 'мальчик',
     age: '1 год',
-    breed: 'Золотистый ретривер',
-    type: 'dog',
-    description: 'Солнечный и добрейший пес с золотистой шерстью. Обожает всех людей и отлично ладит с детьми',
-    image: '/img/efe6b680-d4e4-4a26-9b68-0307ff111898.jpg'
+    breed: 'Рэгдолл',
+    type: 'cat',
+    description: 'Голубоглазый красавец породы рэгдолл. Расслабленный, ласковый и невероятно мягкий',
+    image: '/img/048c113c-837d-461a-adae-0f0226398a36.jpg'
   },
   {
     name: 'Снежинка',
     gender: 'девочка',
-    age: '1 год',
+    age: '2 года',
     breed: 'Турецкая ангора',
     type: 'cat',
-    description: 'Белоснежная красавица с длинной шерстью и пушистым хвостом. Очень игривая и общительная',
-    image: '/img/fef4767e-4834-431a-b623-11a32d9ead06.jpg'
+    description: 'Белоснежная красавица с длинной шерстью. Изящная, игривая и очень общительная',
+    image: '/img/6a5b1d97-b51a-48a2-ab23-76d92983fcfa.jpg'
   },
   {
-    name: 'Бим',
-    gender: 'мальчик',
-    age: '9 месяцев',
-    breed: 'Джек-рассел-терьер',
-    type: 'dog',
-    description: 'Маленький энерджайзер! Обожает активные игры, длительные прогулки и копать ямки',
-    image: '/img/fbd273f3-9ad9-4c63-a51c-678c0dfe2309.jpg'
-  },
-  {
-    name: 'Василиса',
+    name: 'Лесси',
     gender: 'девочка',
-    age: '2 года',
-    breed: 'Шотландская вислоухая',
+    age: '3 года',
+    breed: 'Норвежская лесная кошка',
     type: 'cat',
-    description: 'Милая кошечка с забавными ушками. Ласковая, спокойная и очень привязана к хозяевам',
-    image: '/img/9938e1f2-3590-409c-b24a-5868785802ed.jpg'
+    description: 'Величественная лесная красавица. Независимая, умная и отличная охотница',
+    image: '/img/5e3e670c-78b8-4007-9eca-0f1e719359c4.jpg'
   },
   {
-    name: 'Тайсон',
+    name: 'Грей',
     gender: 'мальчик',
-    age: '4 года',
-    breed: 'Ротвейлер',
-    type: 'dog',
-    description: 'Верный охранник с мягким характером. Отлично дрессирован, идеален для частного дома',
-    image: '/img/cfa9fd09-3266-41f5-997c-05849a05789d.jpg'
+    age: '2 года',
+    breed: 'Нибелунг',
+    type: 'cat',
+    description: 'Редкий серебристый красавец с зелеными глазами. Спокойный, верный и элегантный',
+    image: '/img/5b3d40db-9077-4ada-8789-3db20f54caf3.jpg'
   }
 ];
 
@@ -386,8 +386,8 @@ export default function Index() {
             </Card>
             <Card className="text-center p-8 hover:shadow-xl transition-shadow">
               <Icon name="Heart" className="text-primary mx-auto mb-4" size={48} />
-              <h3 className="text-3xl font-bold mb-2">24/7</h3>
-              <p className="text-muted-foreground">Круглосуточная забота и внимание</p>
+              <h3 className="text-3xl font-bold mb-2">100+</h3>
+              <p className="text-muted-foreground">Волонтёров помогают приюту</p>
             </Card>
           </div>
         </div>
@@ -547,23 +547,26 @@ export default function Index() {
 
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Icon name="Stethoscope" className="text-primary" size={28} />
-                Ветеринарный кабинет
+                <Icon name="Cat" className="text-primary" size={28} />
+                Наши кошки
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg" alt="Ветеринарный кабинет" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                </div>
-                <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/aae188a3-b1ec-46dd-84d9-6951afa5c2fe.jpg" alt="Вакцинация" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/14c90348-33cf-4d69-bcfc-fc6beae2741b.jpg" alt="Британская кошка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Вакцинация животных</p>
+                    <p className="text-white font-semibold">Британская кошка</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/9ff0f5b1-f4d0-4abb-8aa0-000bf99314d7.jpg" alt="Купание собаки" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/bd755f0a-0e80-4878-b81c-b38464a3d498.jpg" alt="Мейн-кун" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Купание и гигиена</p>
+                    <p className="text-white font-semibold">Мейн-кун</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/26905823-79b6-44ba-b54a-b3530039bd58.jpg" alt="Персидская кошка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Персидская кошка</p>
                   </div>
                 </div>
               </div>
@@ -571,26 +574,26 @@ export default function Index() {
 
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                <Icon name="Scissors" className="text-primary" size={28} />
-                Груминг и уход
+                <Icon name="Dog" className="text-primary" size={28} />
+                Наши собаки
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/df26d611-d53a-4dc5-abdd-4caf525946c4.jpg" alt="Стрижка шерсти" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/e5a0620c-c1e8-4e99-88d7-79f19a7da9fd.jpg" alt="Золотистый ретривер" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Стрижка шерсти</p>
+                    <p className="text-white font-semibold">Золотистый ретривер</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/d2b51569-4f92-409f-9270-5f6a5fef05bd.jpg" alt="Подстригание когтей" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/b545cd6a-44bf-4d8b-905a-87b68ced0b8b.jpg" alt="Хаски" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Подстригание когтей</p>
+                    <p className="text-white font-semibold">Сибирский хаски</p>
                   </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/6712d14d-797d-4287-813c-6fd126fab68a.jpg" alt="Расчесывание" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/c2742fac-2efc-47e0-abdc-d40a936e04f7.jpg" alt="Немецкая овчарка" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Расчесывание длинношерстных</p>
+                    <p className="text-white font-semibold">Немецкая овчарка</p>
                   </div>
                 </div>
               </div>
@@ -599,16 +602,19 @@ export default function Index() {
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
                 <Icon name="Sparkles" className="text-primary" size={28} />
-                Игровая зона
+                Маленькие породы
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg" alt="Игровая зона" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/d304cdcd-3265-4e00-8b6e-fabb84744335.jpg" alt="Йоркширский терьер" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Йоркширский терьер</p>
+                  </div>
                 </div>
                 <div className="relative h-64 rounded-2xl overflow-hidden group">
-                  <img src="/img/bac52cab-c9c2-4451-a8a3-98970c0e58f5.jpg" alt="Игры с животными" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src="/img/ebc0c6f8-a06b-4baf-97d2-ecb5f59d0607.jpg" alt="Мопс" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                    <p className="text-white font-semibold">Игры и социализация</p>
+                    <p className="text-white font-semibold">Мопс</p>
                   </div>
                 </div>
               </div>
@@ -627,7 +633,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  01 Января 2025
+                  05 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -647,14 +653,14 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/2916cc7b-5829-4598-a0a0-46cae2264678.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  15 Января 2025
+                  12 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">День открытых дверей - успех!</h3>
+                <h3 className="text-xl font-bold mb-3">Осенняя выставка-пристройство животных</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  В минувшие выходные мы провели день открытых дверей. Приют посетило более 100 человек, 
-                  и 12 питомцев обрели новый дом!
+                  В эти выходные состоится большая осенняя выставка! Приходите познакомиться с нашими питомцами. 
+                  Для всех желающих усыновить - консультации ветеринара бесплатно!
                 </p>
                 <Button variant="outline" className="rounded-full w-full">
                   <Icon name="ArrowRight" size={16} className="mr-2" />
@@ -667,14 +673,14 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  20 Января 2025
+                  28 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">Новое оборудование для клиники</h3>
+                <h3 className="text-xl font-bold mb-3">Приют готовится к зиме</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Благодаря вашей помощи мы закупили современное ветеринарное оборудование. 
-                  Теперь мы сможем проводить больше операций прямо в приюте!
+                  Мы активно готовимся к зиме: утепляем вольеры, закупаем теплые лежанки и корм. 
+                  Если хотите помочь - любые теплые одеяла и подстилки очень нужны!
                 </p>
                 <Button variant="outline" className="rounded-full w-full">
                   <Icon name="ArrowRight" size={16} className="mr-2" />
@@ -1141,7 +1147,7 @@ export default function Index() {
                 <Icon name="PawPrint" size={32} />
                 <span className="text-xl font-bold">Приют для животных</span>
               </div>
-              <p className="text-gray-400">Помогаем бездомным животным обрести дом и любящую семью с 2010 года</p>
+              <p className="text-gray-400">Помогаем бездомным животным обрести дом и любящую семью. Наш проект только начинается!</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Навигация</h4>
