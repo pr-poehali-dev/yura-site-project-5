@@ -304,8 +304,8 @@ export default function Index() {
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
               <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
               <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
+              <a href="#tour" className="hover:text-primary transition-colors">Экскурсия</a>
               <a href="#news" className="hover:text-primary transition-colors">Новости</a>
-              <a href="#help" className="hover:text-primary transition-colors">Помощь</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
               <Button 
                 className="rounded-full bg-primary text-white hover:bg-primary/90 flex items-center gap-2"
@@ -331,8 +331,8 @@ export default function Index() {
               <a href="#home" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Главная</a>
               <a href="#animals" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Воспитанники</a>
               <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Галерея</a>
+              <a href="#tour" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Экскурсия</a>
               <a href="#news" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Новости</a>
-              <a href="#help" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Помощь</a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Контакты</a>
             </div>
           </div>
@@ -479,39 +479,129 @@ export default function Index() {
       <section id="gallery" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Галерея приюта</h2>
-          <p className="text-center text-muted-foreground mb-12">Загляните в нашу жизнь - посмотрите, как живут наши питомцы</p>
+          <p className="text-center text-muted-foreground mb-12">Загляните в нашу жизнь - посмотрите, как мы заботимся о наших питомцах</p>
           
-          <div className="grid md:grid-cols-3 gap-4 mb-4">
-            <div className="relative h-64 rounded-2xl overflow-hidden group">
-              <img src="/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg" alt="Вольеры для собак" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                <p className="text-white font-semibold">Вольеры для собак</p>
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Home" className="text-primary" size={28} />
+                Вольеры для собак
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg" alt="Вольеры" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/e2dfee7a-5b51-47bf-b2dc-98933c6341e1.jpg" alt="Кормление собак" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Кормление питомцев</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden group">
-              <img src="/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg" alt="Комната для кошек" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                <p className="text-white font-semibold">Комната для кошек</p>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Cat" className="text-primary" size={28} />
+                Комната для кошек
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg" alt="Комната для кошек" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/6712d14d-797d-4287-813c-6fd126fab68a.jpg" alt="Расчесывание кошки" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Расчесывание и уход за шерстью</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden group">
-              <img src="/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg" alt="Площадка для выгула" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                <p className="text-white font-semibold">Площадка для выгула</p>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Trees" className="text-primary" size={28} />
+                Площадка для выгула
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg" alt="Площадка для выгула" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/4e0859ed-daf2-4d6f-a358-f32d0508a81b.jpg" alt="Прогулка с собаками" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Прогулки на свежем воздухе</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="relative h-64 rounded-2xl overflow-hidden group">
-              <img src="/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg" alt="Ветеринарный кабинет" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                <p className="text-white font-semibold">Ветеринарный кабинет</p>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Stethoscope" className="text-primary" size={28} />
+                Ветеринарный кабинет
+              </h3>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg" alt="Ветеринарный кабинет" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/aae188a3-b1ec-46dd-84d9-6951afa5c2fe.jpg" alt="Вакцинация" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Вакцинация животных</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/9ff0f5b1-f4d0-4abb-8aa0-000bf99314d7.jpg" alt="Купание собаки" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Купание и гигиена</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="relative h-64 rounded-2xl overflow-hidden group">
-              <img src="/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg" alt="Игровая зона" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
-                <p className="text-white font-semibold">Игровая зона</p>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Scissors" className="text-primary" size={28} />
+                Груминг и уход
+              </h3>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/df26d611-d53a-4dc5-abdd-4caf525946c4.jpg" alt="Стрижка шерсти" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Стрижка шерсти</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/d2b51569-4f92-409f-9270-5f6a5fef05bd.jpg" alt="Подстригание когтей" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Подстригание когтей</p>
+                  </div>
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/6712d14d-797d-4287-813c-6fd126fab68a.jpg" alt="Расчесывание" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Расчесывание длинношерстных</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="Sparkles" className="text-primary" size={28} />
+                Игровая зона
+              </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg" alt="Игровая зона" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div className="relative h-64 rounded-2xl overflow-hidden group">
+                  <img src="/img/bac52cab-c9c2-4451-a8a3-98970c0e58f5.jpg" alt="Игры с животными" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors flex items-end p-4">
+                    <p className="text-white font-semibold">Игры и социализация</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -528,7 +618,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  01 Октября 2024
+                  01 Января 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -548,7 +638,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/2916cc7b-5829-4598-a0a0-46cae2264678.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  25 Сентября 2024
+                  15 Января 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -568,7 +658,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  15 Сентября 2024
+                  20 Января 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -612,7 +702,90 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="testimonials" className="py-20 px-4">
+      <section id="tour" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <Icon name="Calendar" className="text-primary mx-auto mb-4" size={64} />
+            <h2 className="text-4xl font-bold mb-4">Запишитесь на экскурсию</h2>
+            <p className="text-lg text-muted-foreground">
+              Приходите познакомиться с нашими питомцами лично! Мы проводим бесплатные экскурсии по приюту каждую субботу и воскресенье
+            </p>
+          </div>
+
+          <Card className="p-8">
+            <form onSubmit={(e) => {
+              e.preventDefault();
+              alert('Спасибо за запись! Мы свяжемся с вами для подтверждения времени экскурсии.');
+            }} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Ваше имя *</label>
+                  <Input placeholder="Иван Иванов" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Телефон *</label>
+                  <Input type="tel" placeholder="+7 (999) 123-45-67" required />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Email</label>
+                  <Input type="email" placeholder="example@mail.ru" />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Количество человек *</label>
+                  <Input type="number" min="1" max="10" defaultValue="1" required />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Предпочитаемая дата *</label>
+                <Input type="date" required />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Предпочитаемое время</label>
+                <select className="w-full h-10 px-3 rounded-md border border-input bg-background">
+                  <option>10:00 - 12:00</option>
+                  <option>12:00 - 14:00</option>
+                  <option>14:00 - 16:00</option>
+                  <option>16:00 - 18:00</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Комментарий</label>
+                <Textarea 
+                  placeholder="Расскажите, что вас интересует больше всего..." 
+                  rows={3}
+                />
+              </div>
+
+              <div className="bg-primary/10 p-4 rounded-lg">
+                <h4 className="font-semibold mb-2 flex items-center gap-2">
+                  <Icon name="Info" size={20} className="text-primary" />
+                  Что вас ждет на экскурсии:
+                </h4>
+                <ul className="space-y-1 text-sm text-muted-foreground">
+                  <li>• Знакомство с историей приюта</li>
+                  <li>• Посещение всех зон: вольеры, игровая комната, ветклиника</li>
+                  <li>• Общение с питомцами под присмотром специалистов</li>
+                  <li>• Консультация по усыновлению животных</li>
+                  <li>• Продолжительность: 1-1.5 часа</li>
+                </ul>
+              </div>
+
+              <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90">
+                <Icon name="Calendar" size={20} className="mr-2" />
+                Записаться на экскурсию
+              </Button>
+            </form>
+          </Card>
+        </div>
+      </section>
+
+      <section id="testimonials" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Истории наших друзей</h2>
           <p className="text-center text-muted-foreground mb-12">Счастливые истории усыновления питомцев</p>
