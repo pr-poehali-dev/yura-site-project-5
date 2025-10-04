@@ -68,6 +68,98 @@ const animals = [
     age: '2 месяца',
     description: 'Крошечная полосатая малышка с любопытным характером. Первая исследует все новое и мурлычет как моторчик',
     image: '/img/1c83f061-e6a6-478a-b1c4-e2439fca08ce.jpg'
+  },
+  {
+    name: 'Джек',
+    gender: 'мальчик',
+    age: '8 месяцев',
+    description: 'Энергичный щенок лабрадора, обожает плавать и приносить игрушки. Очень умный, быстро учится командам',
+    image: '/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg'
+  },
+  {
+    name: 'Пушинка',
+    gender: 'девочка',
+    age: 'около 3 лет',
+    description: 'Пушистая красавица-персиянка с королевскими манерами. Любит когда ее расчесывают и гладят',
+    image: '/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg'
+  },
+  {
+    name: 'Барни',
+    gender: 'мальчик',
+    age: 'около 2 лет',
+    description: 'Дружелюбный бигль с отличным нюхом. Любит исследовать окрестности и играть с другими собаками',
+    image: '/img/7e0e92da-b8ea-4c55-a2a3-c5c0b548975e.jpg'
+  },
+  {
+    name: 'Рыжик-старший',
+    gender: 'мальчик',
+    age: 'около 5 лет',
+    description: 'Солнечный рыжий кот, очень ласковый и мурлыкающий. Отлично подходит для семей с детьми',
+    image: '/img/615eef6d-f674-4035-8c0f-a295aad24446.jpg'
+  },
+  {
+    name: 'Луна',
+    gender: 'девочка',
+    age: '5 месяцев',
+    description: 'Очаровательная хаски с голубыми глазами. Активная, любит бегать и играть в снегу',
+    image: '/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg'
+  },
+  {
+    name: 'Сапфир',
+    gender: 'мальчик',
+    age: 'около 4 лет',
+    description: 'Изящный сиамский кот с пронзительными голубыми глазами. Разговорчивый и преданный компаньон',
+    image: '/img/ab8e9544-3729-4576-9477-0c5d49a889cc.jpg'
+  }
+];
+
+const testimonials = [
+  {
+    name: 'Анна Петрова',
+    pet: 'Взяла Рекса (овчарка)',
+    text: 'Спасибо огромное приюту! Рекс стал полноценным членом нашей семьи. Дети его обожают, а он терпеливо с ними играет',
+    image: '/img/fafac969-c31e-46dd-a68d-4dba4b6fda5d.jpg'
+  },
+  {
+    name: 'Семья Ивановых',
+    pet: 'Забрали котенка Марсика',
+    text: 'Марсик принес столько радости в наш дом! Дети учатся заботе и ответственности. Очень благодарны приюту за помощь',
+    image: '/img/2916cc7b-5829-4598-a0a0-46cae2264678.jpg'
+  },
+  {
+    name: 'Валентина Сергеевна',
+    pet: 'Взяла Тузика',
+    text: 'Мне 68 лет, всю жизнь мечтала о собаке. Тузик - моя радость и верный друг. Благодаря ему я больше гуляю и чувствую себя нужной',
+    image: '/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg'
+  },
+  {
+    name: 'Дмитрий и Ольга',
+    pet: 'Забрали кошку Симу',
+    text: 'Сима невероятно ласковая! Встречает нас после работы мурлыканьем. Не представляем теперь жизнь без нее',
+    image: '/img/4071ce97-a54f-452c-9144-dc03b6736664.jpg'
+  }
+];
+
+const requirements = [
+  {
+    icon: 'FileText',
+    title: 'Паспорт',
+    description: 'Документ, удостоверяющий личность (оригинал и копия)'
+  },
+  {
+    icon: 'Home',
+    title: 'Подтверждение жилья',
+    description: 'Свидетельство о праве собственности или договор аренды'
+  },
+  {
+    icon: 'Users',
+    title: 'Согласие семьи',
+    description: 'Все члены семьи должны быть согласны на появление питомца'
+  },
+  {
+    icon: 'Heart',
+    title: 'Ответственность',
+    description: 'Подписание договора ответственного содержания животного'
   }
 ];
 
@@ -88,6 +180,7 @@ const services = [
 
 export default function Index() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen">
@@ -101,13 +194,37 @@ export default function Index() {
             <div className="hidden md:flex gap-6">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
               <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
+              <a href="#testimonials" className="hover:text-primary transition-colors">Отзывы</a>
               <a href="#help" className="hover:text-primary transition-colors">Как помочь</a>
+              <a href="#requirements" className="hover:text-primary transition-colors">Требования</a>
+              <a href="#schedule" className="hover:text-primary transition-colors">График</a>
               <a href="#about" className="hover:text-primary transition-colors">О приюте</a>
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
             </div>
+            <button 
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <Icon name={mobileMenuOpen ? 'X' : 'Menu'} size={28} className="text-primary" />
+            </button>
           </div>
         </nav>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t animate-fade-in">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
+              <a href="#home" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Главная</a>
+              <a href="#animals" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Воспитанники</a>
+              <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Отзывы</a>
+              <a href="#help" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Как помочь</a>
+              <a href="#requirements" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Требования</a>
+              <a href="#schedule" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">График</a>
+              <a href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">О приюте</a>
+              <a href="#services" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Услуги</a>
+              <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Контакты</a>
+            </div>
+          </div>
+        )}
       </header>
 
       <section id="home" className="pt-32 pb-20 px-4">
@@ -186,7 +303,36 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="help" className="py-20 px-4 bg-secondary/30">
+      <section id="testimonials" className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Нас забрали к себе домой</h2>
+          <p className="text-center text-muted-foreground mb-12">Истории счастливых питомцев и их новых семей</p>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Icon name="Quote" className="text-primary" size={24} />
+                    <h3 className="text-xl font-bold">{testimonial.name}</h3>
+                  </div>
+                  <p className="text-sm text-primary font-semibold mb-3">{testimonial.pet}</p>
+                  <p className="text-sm text-muted-foreground italic">"{testimonial.text}"</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="help" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Если вы хотите помочь приюту</h2>
           <p className="text-center text-muted-foreground mb-12">Что вы можете сделать, чтобы помочь нашему приюту для животных</p>
@@ -205,6 +351,137 @@ export default function Index() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="requirements" className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4">Документы для усыновления</h2>
+          <p className="text-center text-muted-foreground mb-12">Что нужно для того, чтобы забрать питомца домой</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {requirements.map((req, index) => (
+              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name={req.icon} className="text-primary" size={32} />
+                </div>
+                <h3 className="font-bold mb-2">{req.title}</h3>
+                <p className="text-sm text-muted-foreground">{req.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl font-bold text-center mb-4">График работы приюта</h2>
+          <p className="text-center text-muted-foreground mb-12">Когда вы можете приехать к нам</p>
+          
+          <Card className="p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Icon name="Clock" className="text-primary" size={32} />
+                  <h3 className="text-2xl font-bold">Часы работы</h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b">
+                    <span className="font-semibold">Понедельник - Пятница:</span>
+                    <span className="text-muted-foreground">10:00 - 19:00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b">
+                    <span className="font-semibold">Суббота:</span>
+                    <span className="text-muted-foreground">11:00 - 17:00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b">
+                    <span className="font-semibold">Воскресенье:</span>
+                    <span className="text-muted-foreground">12:00 - 16:00</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Icon name="Calendar" className="text-primary" size={32} />
+                  <h3 className="text-2xl font-bold">Как посетить</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Icon name="Phone" className="text-primary mt-1" size={20} />
+                    <div>
+                      <p className="font-semibold mb-1">Позвоните заранее</p>
+                      <p className="text-sm text-muted-foreground">8 800 333 22 33</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="MapPin" className="text-primary mt-1" size={20} />
+                    <div>
+                      <p className="font-semibold mb-1">Наш адрес</p>
+                      <p className="text-sm text-muted-foreground">г. Екатеринбург, Чкаловский район</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Icon name="Info" className="text-primary mt-1" size={20} />
+                    <div>
+                      <p className="font-semibold mb-1">Важно знать</p>
+                      <p className="text-sm text-muted-foreground">Запись на визит обязательна</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-primary text-white">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">Реквизиты для помощи</h2>
+          <p className="text-lg text-center mb-8 opacity-90">
+            Вы можете помочь приюту денежным переводом
+          </p>
+          <div className="max-w-2xl mx-auto bg-white/10 rounded-3xl p-8">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="text-center">
+                <Icon name="CreditCard" className="mx-auto mb-3" size={40} />
+                <p className="font-semibold mb-2">Номер карты Сбербанк</p>
+                <p className="text-2xl font-bold mb-1">2202 2000 1234 5678</p>
+                <p className="text-sm opacity-80">На любую сумму</p>
+              </div>
+              <div className="text-center">
+                <Icon name="QrCode" className="mx-auto mb-3" size={40} />
+                <p className="font-semibold mb-2">QR-код для перевода</p>
+                <div className="bg-white w-32 h-32 mx-auto rounded-lg flex items-center justify-center">
+                  <Icon name="QrCode" className="text-primary" size={80} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-4">Ветеринарная информация</h2>
+          <p className="text-center text-muted-foreground mb-8">Все наши питомцы получают полный ветеринарный уход</p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="p-6 text-center">
+              <Icon name="Syringe" className="text-primary mx-auto mb-3" size={32} />
+              <h3 className="font-bold mb-2">Вакцинация</h3>
+              <p className="text-sm text-muted-foreground">Все животные привиты по возрасту</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Icon name="Scissors" className="text-primary mx-auto mb-3" size={32} />
+              <h3 className="font-bold mb-2">Стерилизация</h3>
+              <p className="text-sm text-muted-foreground">Проводится в партнёрских клиниках</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Icon name="ClipboardList" className="text-primary mx-auto mb-3" size={32} />
+              <h3 className="font-bold mb-2">Медкарты</h3>
+              <p className="text-sm text-muted-foreground">Каждому питомцу выдаётся паспорт</p>
+            </Card>
           </div>
         </div>
       </section>
