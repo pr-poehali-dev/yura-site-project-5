@@ -5,12 +5,25 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
-const animals = [
+type AnimalType = 'dog' | 'cat';
+
+interface Animal {
+  name: string;
+  gender: string;
+  age: string;
+  breed: string;
+  description: string;
+  image: string;
+  type: AnimalType;
+}
+
+const animals: Animal[] = [
   {
     name: 'Мухтар',
     gender: 'мальчик',
     age: '5 лет',
     breed: 'Немецкая овчарка',
+    type: 'dog',
     description: 'Активный и игривый пес, обожает долгие прогулки и апортировку мячика. Отлично ладит с детьми, знает базовые команды',
     image: '/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg'
   },
@@ -19,6 +32,7 @@ const animals = [
     gender: 'девочка',
     age: '3 года',
     breed: 'Метис',
+    type: 'dog',
     description: 'Спокойная и ласковая собака, идеальна для квартирного содержания. Любит обниматься и спать рядом с хозяином',
     image: '/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg'
   },
@@ -27,6 +41,7 @@ const animals = [
     gender: 'девочка',
     age: '4 года',
     breed: 'Дворовая кошка',
+    type: 'cat',
     description: 'Независимая кошечка с характером, предпочитает спокойную обстановку. Любит сидеть на подоконнике и наблюдать за птицами',
     image: '/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg'
   },
@@ -35,6 +50,7 @@ const animals = [
     gender: 'мальчик',
     age: '3 месяца',
     breed: 'Британская короткошерстная',
+    type: 'cat',
     description: 'Игривый котенок, полон энергии! Обожает играть с игрушками-мышками и гоняться за солнечными зайчиками',
     image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
   },
@@ -43,6 +59,7 @@ const animals = [
     gender: 'девочка',
     age: '6 месяцев',
     breed: 'Мальтийская болонка',
+    type: 'dog',
     description: 'Маленькая белоснежная собачка с добрым сердцем. Очень привязывается к людям, любит сидеть на ручках',
     image: '/img/3c640813-1848-48ec-846a-8febfd945d67.jpg'
   },
@@ -51,6 +68,7 @@ const animals = [
     gender: 'мальчик',
     age: '4 месяца',
     breed: 'Метис',
+    type: 'dog',
     description: 'Крохотный щенок с огромной любовью к жизни! Очень социальный, обожает знакомиться с новыми людьми и животными',
     image: '/img/f175e0fd-9f04-47f1-89f0-163df9b70e70.jpg'
   },
@@ -59,6 +77,7 @@ const animals = [
     gender: 'мальчик',
     age: '7 лет',
     breed: 'Стаффордширский терьер',
+    type: 'dog',
     description: 'Мудрый и спокойный пес, прекрасный компаньон для размеренных прогулок. Очень терпелив и послушен',
     image: '/img/0ed6522c-6ff1-41c6-bbf6-cf705b007d88.jpg'
   },
@@ -67,6 +86,7 @@ const animals = [
     gender: 'мальчик',
     age: '2 года',
     breed: 'Европейская короткошерстная',
+    type: 'cat',
     description: 'Элегантный черно-белый кот с аристократичными манерами. Любит вкусную еду и мягкие подушки',
     image: '/img/da30717b-7e57-4b78-ac3e-2e5456457d18.jpg'
   },
@@ -75,6 +95,7 @@ const animals = [
     gender: 'девочка',
     age: '2 месяца',
     breed: 'Дворовая кошка',
+    type: 'cat',
     description: 'Крошечная полосатая малышка с любопытным характером. Первая исследует все новое и мурлычет как моторчик',
     image: '/img/1c83f061-e6a6-478a-b1c4-e2439fca08ce.jpg'
   },
@@ -83,6 +104,7 @@ const animals = [
     gender: 'мальчик',
     age: '8 месяцев',
     breed: 'Лабрадор',
+    type: 'dog',
     description: 'Энергичный щенок лабрадора, обожает плавать и приносить игрушки. Очень умный, быстро учится командам',
     image: '/img/27504323-b56f-44a4-8979-d98558ce49f3.jpg'
   },
@@ -91,6 +113,7 @@ const animals = [
     gender: 'девочка',
     age: '3 года',
     breed: 'Персидская',
+    type: 'cat',
     description: 'Пушистая красавица-персиянка с королевскими манерами. Любит когда ее расчесывают и гладят',
     image: '/img/748668e6-b50c-48b8-8443-6b46f8f24977.jpg'
   },
@@ -99,6 +122,7 @@ const animals = [
     gender: 'мальчик',
     age: '2 года',
     breed: 'Бигль',
+    type: 'dog',
     description: 'Дружелюбный бигль с отличным нюхом. Любит исследовать окрестности и играть с другими собаками',
     image: '/img/7e0e92da-b8ea-4c55-a2a3-c5c0b548975e.jpg'
   },
@@ -107,6 +131,7 @@ const animals = [
     gender: 'мальчик',
     age: '5 лет',
     breed: 'Рыжий дворовой',
+    type: 'cat',
     description: 'Солнечный рыжий кот, очень ласковый и мурлыкающий. Отлично подходит для семей с детьми',
     image: '/img/615eef6d-f674-4035-8c0f-a295aad24446.jpg'
   },
@@ -115,6 +140,7 @@ const animals = [
     gender: 'девочка',
     age: '5 месяцев',
     breed: 'Сибирский хаски',
+    type: 'dog',
     description: 'Очаровательная хаски с голубыми глазами. Активная, любит бегать и играть в снегу',
     image: '/img/f9a00142-90a5-41a4-a885-6db0b3fa3db6.jpg'
   },
@@ -123,6 +149,7 @@ const animals = [
     gender: 'мальчик',
     age: '4 года',
     breed: 'Сиамская',
+    type: 'cat',
     description: 'Изящный сиамский кот с пронзительными голубыми глазами. Разговорчивый и преданный компаньон',
     image: '/img/ab8e9544-3729-4576-9477-0c5d49a889cc.jpg'
   }
@@ -196,6 +223,17 @@ const services = [
 export default function Index() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [animalFilter, setAnimalFilter] = useState<'all' | 'dog' | 'cat'>('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedAnimal, setSelectedAnimal] = useState<Animal | null>(null);
+  const [adoptionForm, setAdoptionForm] = useState({ name: '', phone: '', email: '', address: '', reason: '' });
+
+  const filteredAnimals = animals.filter(animal => {
+    const matchesFilter = animalFilter === 'all' || animal.type === animalFilter;
+    const matchesSearch = animal.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         animal.breed.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   return (
     <div className="min-h-screen">
@@ -206,7 +244,7 @@ export default function Index() {
               <Icon name="PawPrint" className="text-primary" size={32} />
               <span className="text-2xl font-bold text-primary">Приют для животных</span>
             </div>
-            <div className="hidden md:flex gap-6">
+            <div className="hidden md:flex gap-6 items-center">
               <a href="#home" className="hover:text-primary transition-colors">Главная</a>
               <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
               <a href="#testimonials" className="hover:text-primary transition-colors">Отзывы</a>
@@ -216,6 +254,13 @@ export default function Index() {
               <a href="#about" className="hover:text-primary transition-colors">О приюте</a>
               <a href="#services" className="hover:text-primary transition-colors">Услуги</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
+              <Button 
+                className="rounded-full bg-primary text-white hover:bg-primary/90 flex items-center gap-2"
+                onClick={() => window.scrollTo({ top: document.getElementById('donate')?.offsetTop || 0, behavior: 'smooth' })}
+              >
+                <Icon name="Heart" size={18} />
+                Помочь сейчас
+              </Button>
             </div>
             <button 
               className="md:hidden"
@@ -294,10 +339,60 @@ export default function Index() {
       <section id="animals" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Воспитанники приюта</h2>
-          <p className="text-center text-muted-foreground mb-12">Любой желающий может забрать к себе животное из приюта</p>
+          <p className="text-center text-muted-foreground mb-8">Любой желающий может забрать к себе животное из приюта</p>
+          
+          <div className="flex flex-col md:flex-row gap-4 mb-8 justify-center items-center">
+            <div className="flex gap-2">
+              <Button 
+                variant={animalFilter === 'all' ? 'default' : 'outline'}
+                onClick={() => setAnimalFilter('all')}
+                className="rounded-full"
+              >
+                <Icon name="PawPrint" size={18} className="mr-2" />
+                Все ({animals.length})
+              </Button>
+              <Button 
+                variant={animalFilter === 'dog' ? 'default' : 'outline'}
+                onClick={() => setAnimalFilter('dog')}
+                className="rounded-full"
+              >
+                🐕 Собаки ({animals.filter(a => a.type === 'dog').length})
+              </Button>
+              <Button 
+                variant={animalFilter === 'cat' ? 'default' : 'outline'}
+                onClick={() => setAnimalFilter('cat')}
+                className="rounded-full"
+              >
+                🐈 Кошки ({animals.filter(a => a.type === 'cat').length})
+              </Button>
+            </div>
+            <div className="relative w-full md:w-64">
+              <Icon name="Search" size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <Input 
+                placeholder="Поиск по имени или породе..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-10 rounded-full"
+              />
+            </div>
+          </div>
+
+          {filteredAnimals.length === 0 && (
+            <div className="text-center py-12">
+              <Icon name="Search" size={48} className="mx-auto text-muted-foreground mb-4" />
+              <p className="text-lg text-muted-foreground">Животные не найдены</p>
+              <Button 
+                variant="outline" 
+                className="mt-4 rounded-full"
+                onClick={() => { setSearchQuery(''); setAnimalFilter('all'); }}
+              >
+                Сбросить фильтры
+              </Button>
+            </div>
+          )}
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {animals.map((animal, index) => (
+            {filteredAnimals.map((animal, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <div className="relative h-64 overflow-hidden">
                   <img 
@@ -311,7 +406,12 @@ export default function Index() {
                   <p className="text-sm text-muted-foreground mb-1">{animal.age}</p>
                   <p className="text-sm font-semibold text-primary mb-3">{animal.breed}</p>
                   <p className="text-sm mb-4">{animal.description}</p>
-                  <Button className="w-full rounded-full">Забрать домой</Button>
+                  <Button 
+                    className="w-full rounded-full"
+                    onClick={() => setSelectedAnimal(animal)}
+                  >
+                    Забрать домой
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -451,7 +551,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-primary text-white">
+      <section id="donate" className="py-16 px-4 bg-primary text-white">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">Реквизиты для помощи</h2>
           <p className="text-lg text-center mb-8 opacity-90">
@@ -677,6 +777,107 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {selectedAnimal && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={() => setSelectedAnimal(null)}>
+          <Card className="max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <div className="p-6">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h2 className="text-3xl font-bold mb-2">Заявка на усыновление</h2>
+                  <p className="text-muted-foreground">Питомец: <span className="text-primary font-semibold">{selectedAnimal.name}</span> ({selectedAnimal.breed})</p>
+                </div>
+                <button onClick={() => setSelectedAnimal(null)} className="text-muted-foreground hover:text-foreground">
+                  <Icon name="X" size={24} />
+                </button>
+              </div>
+              
+              <div className="mb-6 rounded-xl overflow-hidden">
+                <img 
+                  src={selectedAnimal.image} 
+                  alt={selectedAnimal.name}
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+
+              <div className="space-y-4">
+                <div>
+                  <label className="text-sm font-semibold mb-1 block">Ваше имя *</label>
+                  <Input 
+                    placeholder="Введите ФИО" 
+                    value={adoptionForm.name}
+                    onChange={(e) => setAdoptionForm({...adoptionForm, name: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-semibold mb-1 block">Телефон *</label>
+                  <Input 
+                    type="tel" 
+                    placeholder="+7 (___) ___-__-__" 
+                    value={adoptionForm.phone}
+                    onChange={(e) => setAdoptionForm({...adoptionForm, phone: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-semibold mb-1 block">Email *</label>
+                  <Input 
+                    type="email" 
+                    placeholder="example@mail.ru" 
+                    value={adoptionForm.email}
+                    onChange={(e) => setAdoptionForm({...adoptionForm, email: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-semibold mb-1 block">Адрес проживания *</label>
+                  <Input 
+                    placeholder="Город, улица, дом, квартира" 
+                    value={adoptionForm.address}
+                    onChange={(e) => setAdoptionForm({...adoptionForm, address: e.target.value})}
+                  />
+                </div>
+                <div>
+                  <label className="text-sm font-semibold mb-1 block">Почему вы хотите взять именно этого питомца?</label>
+                  <Textarea 
+                    placeholder="Расскажите о себе и своих условиях для содержания животного" 
+                    rows={4}
+                    value={adoptionForm.reason}
+                    onChange={(e) => setAdoptionForm({...adoptionForm, reason: e.target.value})}
+                  />
+                </div>
+
+                <div className="bg-secondary/30 p-4 rounded-lg">
+                  <h3 className="font-semibold mb-2 flex items-center gap-2">
+                    <Icon name="Info" size={18} className="text-primary" />
+                    Важная информация
+                  </h3>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• После отправки заявки с вами свяжется наш специалист</li>
+                    <li>• Необходимо будет предоставить документы для усыновления</li>
+                    <li>• Возможен визит к вам домой для проверки условий</li>
+                    <li>• Подписание договора ответственного содержания</li>
+                  </ul>
+                </div>
+
+                <Button 
+                  className="w-full rounded-full" 
+                  size="lg"
+                  onClick={() => {
+                    alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+                    setSelectedAnimal(null);
+                    setAdoptionForm({ name: '', phone: '', email: '', address: '', reason: '' });
+                  }}
+                >
+                  <Icon name="Send" size={18} className="mr-2" />
+                  Отправить заявку
+                </Button>
+                <p className="text-xs text-center text-muted-foreground">
+                  Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }
