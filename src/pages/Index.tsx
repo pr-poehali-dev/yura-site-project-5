@@ -160,7 +160,7 @@ const animals: Animal[] = [
     breed: 'Золотистый ретривер',
     type: 'dog',
     description: 'Солнечный и добрейший пес с золотистой шерстью. Обожает всех людей и отлично ладит с детьми',
-    image: '/img/2916cc7b-5829-4598-a0a0-46cae2264678.jpg'
+    image: '/img/efe6b680-d4e4-4a26-9b68-0307ff111898.jpg'
   },
   {
     name: 'Снежинка',
@@ -169,7 +169,7 @@ const animals: Animal[] = [
     breed: 'Турецкая ангора',
     type: 'cat',
     description: 'Белоснежная красавица с длинной шерстью и пушистым хвостом. Очень игривая и общительная',
-    image: '/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg'
+    image: '/img/fef4767e-4834-431a-b623-11a32d9ead06.jpg'
   },
   {
     name: 'Бим',
@@ -178,7 +178,7 @@ const animals: Animal[] = [
     breed: 'Джек-рассел-терьер',
     type: 'dog',
     description: 'Маленький энерджайзер! Обожает активные игры, длительные прогулки и копать ямки',
-    image: '/img/4071ce97-a54f-452c-9144-dc03b6736664.jpg'
+    image: '/img/fbd273f3-9ad9-4c63-a51c-678c0dfe2309.jpg'
   },
   {
     name: 'Василиса',
@@ -187,7 +187,7 @@ const animals: Animal[] = [
     breed: 'Шотландская вислоухая',
     type: 'cat',
     description: 'Милая кошечка с забавными ушками. Ласковая, спокойная и очень привязана к хозяевам',
-    image: '/img/fafac969-c31e-46dd-a68d-4dba4b6fda5d.jpg'
+    image: '/img/9938e1f2-3590-409c-b24a-5868785802ed.jpg'
   },
   {
     name: 'Тайсон',
@@ -196,7 +196,7 @@ const animals: Animal[] = [
     breed: 'Ротвейлер',
     type: 'dog',
     description: 'Верный охранник с мягким характером. Отлично дрессирован, идеален для частного дома',
-    image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
+    image: '/img/cfa9fd09-3266-41f5-997c-05849a05789d.jpg'
   }
 ];
 
@@ -305,7 +305,7 @@ export default function Index() {
               <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
               <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
               <a href="#tour" className="hover:text-primary transition-colors">Экскурсия</a>
-              <a href="#news" className="hover:text-primary transition-colors">Новости</a>
+              <a href="#volunteer" className="hover:text-primary transition-colors">Волонтёрство</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
               <Button 
                 className="rounded-full bg-primary text-white hover:bg-primary/90 flex items-center gap-2"
@@ -332,30 +332,39 @@ export default function Index() {
               <a href="#animals" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Воспитанники</a>
               <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Галерея</a>
               <a href="#tour" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Экскурсия</a>
-              <a href="#news" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Новости</a>
+              <a href="#volunteer" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Волонтёрство</a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Контакты</a>
             </div>
           </div>
         )}
       </nav>
 
-      <section id="home" className="py-20 px-4 bg-gradient-to-b from-primary/10 to-background">
-        <div className="container mx-auto max-w-6xl">
+      <section id="home" className="relative py-32 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/img/a65d577a-b389-4386-97b9-e49fed5e0006.jpg" 
+            alt="Приют для животных" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        </div>
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
           <div className="text-center mb-12 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-2xl">
               Подари любовь бездомному питомцу
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto drop-shadow-lg">
               Каждое животное заслуживает дом, заботу и любовь. Помогите нам дать им второй шанс на счастливую жизнь
             </p>
           </div>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="rounded-full gap-2 bg-primary hover:bg-primary/90">
-              <Icon name="Heart" size={20} />
+            <Button size="lg" className="rounded-full gap-2 bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+              <Icon name="Heart" size={24} />
               Взять питомца
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full gap-2">
-              <Icon name="HandHeart" size={20} />
+            <Button size="lg" variant="outline" className="rounded-full gap-2 bg-white/90 hover:bg-white text-lg px-8 py-6">
+              <Icon name="HandHeart" size={24} />
               Стать волонтером
             </Button>
           </div>
@@ -830,7 +839,149 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="help" className="py-20 px-4">
+      <section id="volunteer" className="py-20 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <Icon name="HandHeart" className="text-primary mx-auto mb-4" size={64} />
+            <h2 className="text-4xl font-bold mb-4">Станьте волонтёром приюта</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Помогайте нашим питомцам обрести дом! Волонтёры - сердце нашего приюта
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="ListChecks" className="text-primary" size={28} />
+                Чем занимаются волонтёры
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Выгул собак и социализация животных</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Кормление и уход за питомцами</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Уборка вольеров и территории</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Помощь на мероприятиях и днях открытых дверей</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Фото и видеосъемка питомцев для соцсетей</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Транспортировка животных к ветеринару</span>
+                </li>
+              </ul>
+            </Card>
+
+            <Card className="p-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <Icon name="UserCheck" className="text-primary" size={28} />
+                Требования к волонтёрам
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Возраст от 18 лет (от 16 с согласия родителей)</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Любовь к животным и ответственность</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Готовность приезжать минимум 1 раз в неделю</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Физическая возможность работать с животными</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Позитивный настрой и командный дух</span>
+                </li>
+                <li className="flex gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <span>Прохождение инструктажа по технике безопасности</span>
+                </li>
+              </ul>
+            </Card>
+          </div>
+
+          <Card className="p-8 bg-primary/5">
+            <h3 className="text-2xl font-bold mb-6 text-center">Заявка на волонтёрство</h3>
+            <form onSubmit={(e) => {
+              e.preventDefault();
+              alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время для собеседования.');
+            }} className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Имя и фамилия *</label>
+                  <Input placeholder="Иван Иванов" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Возраст *</label>
+                  <Input type="number" min="16" max="99" required />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Телефон *</label>
+                  <Input type="tel" placeholder="+7 (999) 123-45-67" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">Email *</label>
+                  <Input type="email" placeholder="example@mail.ru" required />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Когда готовы приступить?</label>
+                <select className="w-full h-10 px-3 rounded-md border border-input bg-background">
+                  <option>Сразу после одобрения</option>
+                  <option>Через 1-2 недели</option>
+                  <option>Через месяц</option>
+                  <option>Обсудим индивидуально</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Есть ли опыт работы с животными?</label>
+                <Textarea 
+                  placeholder="Расскажите о вашем опыте взаимодействия с животными..." 
+                  rows={3}
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold mb-2">Почему вы хотите стать волонтёром?</label>
+                <Textarea 
+                  placeholder="Поделитесь вашей мотивацией..." 
+                  rows={3}
+                  required
+                />
+              </div>
+
+              <Button type="submit" size="lg" className="w-full rounded-full bg-primary hover:bg-primary/90">
+                <Icon name="Send" size={20} className="mr-2" />
+                Отправить заявку
+              </Button>
+            </form>
+          </Card>
+        </div>
+      </section>
+
+      <section id="help" className="py-20 px-4 bg-secondary/30">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-4">Как помочь приюту</h2>
           <p className="text-center text-muted-foreground mb-12">Любая помощь важна для наших питомцев</p>
