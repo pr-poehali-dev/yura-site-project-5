@@ -10,22 +10,64 @@ const animals = [
     name: 'Мухтар',
     gender: 'мальчик',
     age: 'около 5 лет',
-    description: 'Он среднего размера, добродушный, хороший пес, благородный и мудрый, старается не конфликтовать с другими животными',
+    description: 'Активный и игривый пес, обожает долгие прогулки и апортировку мячика. Отлично ладит с детьми, знает базовые команды',
     image: '/img/fcc13289-9f62-49f5-9a6e-100fe8834ce3.jpg'
   },
   {
     name: 'Алиса',
     gender: 'девочка',
-    age: 'около 5 лет',
-    description: 'Она среднего размера, добродушная, хорошая собака, благородная и мудрая, старается не конфликтовать с другими животными',
+    age: 'около 3 лет',
+    description: 'Спокойная и ласковая собака, идеальна для квартирного содержания. Любит обниматься и спать рядом с хозяином',
     image: '/img/c046d6c4-feb8-47c0-9967-3a4730f167f1.jpg'
   },
   {
     name: 'Мурка',
     gender: 'девочка',
-    age: 'около 5 лет',
-    description: 'Она среднего размера, добродушная, хорошая кошка, благородная и мудрая, старается не конфликтовать с другими животными',
+    age: 'около 4 лет',
+    description: 'Независимая кошечка с характером, предпочитает спокойную обстановку. Любит сидеть на подоконнике и наблюдать за птицами',
     image: '/img/6e1e7ee5-0d61-4d83-a69a-82d2912b2b7a.jpg'
+  },
+  {
+    name: 'Тоша',
+    gender: 'мальчик',
+    age: '3 месяца',
+    description: 'Игривый котенок, полон энергии! Обожает играть с игрушками-мышками и гоняться за солнечными зайчиками',
+    image: '/img/f073c044-4e66-43df-97ba-fae6f0615616.jpg'
+  },
+  {
+    name: 'Бусинка',
+    gender: 'девочка',
+    age: '6 месяцев',
+    description: 'Маленькая белоснежная собачка с добрым сердцем. Очень привязывается к людям, любит сидеть на ручках',
+    image: '/img/3c640813-1848-48ec-846a-8febfd945d67.jpg'
+  },
+  {
+    name: 'Рыжик',
+    gender: 'мальчик',
+    age: '4 месяца',
+    description: 'Крохотный щенок с огромной любовью к жизни! Очень социальный, обожает знакомиться с новыми людьми и животными',
+    image: '/img/f175e0fd-9f04-47f1-89f0-163df9b70e70.jpg'
+  },
+  {
+    name: 'Грей',
+    gender: 'мальчик',
+    age: 'около 7 лет',
+    description: 'Мудрый и спокойный пес, прекрасный компаньон для размеренных прогулок. Очень терпелив и послушен',
+    image: '/img/0ed6522c-6ff1-41c6-bbf6-cf705b007d88.jpg'
+  },
+  {
+    name: 'Смокинг',
+    gender: 'мальчик',
+    age: 'около 2 лет',
+    description: 'Элегантный черно-белый кот с аристократичными манерами. Любит вкусную еду и мягкие подушки',
+    image: '/img/da30717b-7e57-4b78-ac3e-2e5456457d18.jpg'
+  },
+  {
+    name: 'Дымка',
+    gender: 'девочка',
+    age: '2 месяца',
+    description: 'Крошечная полосатая малышка с любопытным характером. Первая исследует все новое и мурлычет как моторчик',
+    image: '/img/1c83f061-e6a6-478a-b1c4-e2439fca08ce.jpg'
   }
 ];
 
@@ -98,8 +140,8 @@ export default function Index() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-full p-6 shadow-xl">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary">10+</div>
-                  <div className="text-sm text-muted-foreground">лет заботы</div>
+                  <div className="text-4xl font-bold text-primary">❤️</div>
+                  <div className="text-sm text-muted-foreground">С любовью</div>
                 </div>
               </div>
             </div>
@@ -219,7 +261,7 @@ export default function Index() {
           </div>
 
           <h3 className="text-3xl font-bold text-center mb-4">Немного о приюте для животных</h3>
-          <p className="text-center text-muted-foreground mb-12">Наша компания занимается заботой о бездомных животных уже на протяжении 10 лет</p>
+          <p className="text-center text-muted-foreground mb-12">Мы начинаем свою деятельность по заботе о бездомных животных</p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="p-8">
@@ -318,13 +360,14 @@ export default function Index() {
                 <span className="text-xl font-bold">Приют для животных</span>
               </div>
               <p className="text-sm opacity-80">
-                Заботимся о бездомных животных уже более 10 лет
+                Заботимся о бездомных животных с любовью и ответственностью
               </p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Контакты</h4>
               <p className="text-sm opacity-80 mb-2">Телефон: 8 800 333 22 33</p>
-              <p className="text-sm opacity-80">Email: info@shelter.ru</p>
+              <p className="text-sm opacity-80 mb-2">Email: info@shelter.ru</p>
+              <p className="text-sm opacity-80">г. Екатеринбург, Чкаловский район</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Навигация</h4>
