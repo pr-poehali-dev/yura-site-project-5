@@ -768,7 +768,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/f214b6a4-408e-4845-a2b5-04a9685b7e46.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  18 Октября 2025
+                  03 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -788,7 +788,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/eb5a2c6f-012e-4a18-8cb7-535f002c2f01.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  22 Октября 2025
+                  01 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
@@ -808,7 +808,7 @@ export default function Index() {
               <div className="relative h-48 overflow-hidden">
                 <img src="/img/395869e9-d5aa-45cf-adac-7141c34be4ec.jpg" alt="Новость" className="w-full h-full object-cover" />
                 <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  28 Октября 2025
+                  05 Октября 2025
                 </div>
               </div>
               <CardContent className="p-6">
