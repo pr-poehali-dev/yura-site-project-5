@@ -286,6 +286,99 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/10">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Образовательные программы</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Лекции и конференции для волонтёров о гуманном обращении с животными
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="/img/e62ea5e3-6e87-4fdc-b10a-332d1bce07fc.jpg" 
+                  alt="Лекция для волонтёров"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">Теоретические лекции</h3>
+                <p className="text-muted-foreground mb-4">
+                  Наш лектор проводит образовательные программы для волонтёров, 
+                  где рассказывает о психологии животных, правилах безопасного обращения 
+                  и основах зоозащитной деятельности.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Психология и поведение бездомных животных</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Основы ветеринарной помощи</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Юридические аспекты защиты животных</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="/img/44c40435-b118-4b95-9b67-c4671d5bb709.jpg" 
+                  alt="Практические занятия по отлову"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-3">Практические занятия</h3>
+                <p className="text-muted-foreground mb-4">
+                  Волонтёры изучают методы гуманного отлова животных, 
+                  правила транспортировки в приют и оказания первой помощи 
+                  прямо на практике под руководством опытных специалистов.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Техники безопасного отлова бездомных животных</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Правила транспортировки в приют</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
+                    <p className="text-sm">Первая помощь животным в экстренных ситуациях</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="p-8 max-w-4xl mx-auto bg-primary/5">
+            <div className="text-center">
+              <Icon name="GraduationCap" size={48} className="text-primary mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Расписание обучения</h3>
+              <p className="text-muted-foreground mb-6">
+                Лекции и практические занятия проходят каждую субботу с 14:00 до 17:00. 
+                Регистрация обязательна. После прохождения курса выдаётся сертификат волонтёра.
+              </p>
+              <Button size="lg" className="rounded-full gap-2">
+                <Icon name="Calendar" size={20} />
+                Записаться на обучение
+              </Button>
+            </div>
+          </Card>
+        </div>
+      </section>
+
       {/* Volunteer Section */}
       <section id="volunteer" className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
         <div className="container mx-auto max-w-7xl">
