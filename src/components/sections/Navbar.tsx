@@ -17,7 +17,7 @@ export default function Navbar() {
             <a href="#home" className="hover:text-primary transition-colors">Главная</a>
             <a href="#animals" className="hover:text-primary transition-colors">Воспитанники</a>
             <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
-            <a href="#tour" className="hover:text-primary transition-colors">Экскурсия</a>
+            <a href="#visit" className="hover:text-primary transition-colors">Запись</a>
             <a href="#volunteer" className="hover:text-primary transition-colors">Волонтёрство</a>
             <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
             <Button 
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a href="#home" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Главная</a>
             <a href="#animals" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Воспитанники</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Галерея</a>
-            <a href="#tour" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Экскурсия</a>
+            <a href="#visit" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Запись</a>
             <a href="#volunteer" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Волонтёрство</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors py-2">Контакты</a>
           </div>

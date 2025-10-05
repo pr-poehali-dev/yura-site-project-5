@@ -4,6 +4,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
+import VisitForm from '@/components/sections/VisitForm';
 import { animals } from '@/data/animalsData';
 import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
@@ -394,6 +395,19 @@ export default function Index() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Visit Booking Section */}
+      <section id="visit" className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Запись на посещение</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Приходите познакомиться с нашими питомцами и узнайте больше о приюте
+            </p>
+          </div>
+          <VisitForm />
         </div>
       </section>
 

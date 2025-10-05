@@ -102,7 +102,7 @@ export const animals: Animal[] = [
     image: '/img/e5a0620c-c1e8-4e99-88d7-79f19a7da9fd.jpg'
   },
   {
-    name: 'Василий',
+    name: 'Тоша',
     gender: 'мальчик',
     age: '2 года',
     breed: 'Британская короткошерстная',
