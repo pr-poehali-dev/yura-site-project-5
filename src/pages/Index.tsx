@@ -5,7 +5,6 @@ import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import VisitForm from '@/components/sections/VisitForm';
-import DonationCounter from '@/components/sections/DonationCounter';
 import { animals } from '@/data/animalsData';
 import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements, sponsors } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
@@ -137,9 +136,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Donation Counter Section */}
-      <DonationCounter />
 
       {/* Help Section */}
       <section className="py-20 px-4 bg-secondary/20">
