@@ -67,11 +67,28 @@ export default function HeroSection() {
                   ? 'bg-primary hover:bg-primary/90' 
                   : 'bg-white/90 hover:bg-white'
               }`}
+              onClick={() => {
+                if (btn.text === 'Взять питомца') {
+                  window.scrollTo({ top: document.getElementById('animals')?.offsetTop || 0, behavior: 'smooth' });
+                } else if (btn.text === 'Стать волонтером') {
+                  window.scrollTo({ top: document.getElementById('volunteer')?.offsetTop || 0, behavior: 'smooth' });
+                } else if (btn.text === 'Хочу помогать') {
+                  window.scrollTo({ top: document.getElementById('volunteer')?.offsetTop || 0, behavior: 'smooth' });
+                }
+              }}
             >
               <Icon name={btn.icon as any} size={24} />
               {btn.text}
             </Button>
           ))}
+          <Button 
+            size="lg"
+            className="rounded-full gap-2 text-lg px-8 py-6 bg-green-600 hover:bg-green-700 text-white"
+            onClick={() => window.scrollTo({ top: document.getElementById('visit')?.offsetTop || 0, behavior: 'smooth' })}
+          >
+            <Icon name="Calendar" size={24} />
+            Записаться на визит
+          </Button>
         </div>
         
         <div className="flex gap-3 justify-center">
