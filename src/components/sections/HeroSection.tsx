@@ -84,10 +84,10 @@ export default function HeroSection() {
           <Button 
             size="lg"
             className="rounded-full gap-2 text-lg px-8 py-6 bg-green-600 hover:bg-green-700 text-white"
-            onClick={() => window.scrollTo({ top: document.getElementById('animals')?.offsetTop || 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: document.getElementById('visit')?.offsetTop || 0, behavior: 'smooth' })}
           >
-            <Icon name="Eye" size={24} />
-            Показ животных
+            <Icon name="Calendar" size={24} />
+            Записаться на визит
           </Button>
         </div>
         
