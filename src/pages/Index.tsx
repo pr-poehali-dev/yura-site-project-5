@@ -6,7 +6,7 @@ import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import VisitForm from '@/components/sections/VisitForm';
 import { animals } from '@/data/animalsData';
-import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements } from '@/data/staticData';
+import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements, sponsors } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -398,8 +398,50 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Sponsors Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Наши спонсоры</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Благодарим компании и частных лиц, которые помогают нашему приюту
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {sponsors.map((sponsor, index) => (
+              <Card key={index} className="p-6 hover:shadow-xl transition-shadow">
+                <div className="flex items-start gap-4">
+                  <div className="text-5xl flex-shrink-0">
+                    {sponsor.logo}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-2">{sponsor.name}</h3>
+                    <p className="text-sm text-muted-foreground">{sponsor.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Card className="p-8 max-w-3xl mx-auto bg-primary/5">
+              <h3 className="text-2xl font-bold mb-4">Станьте спонсором!</h3>
+              <p className="text-muted-foreground mb-6">
+                Ваша компания или организация может помочь бездомным животным. Мы будем рады любой поддержке: 
+                кормам, медикаментам, финансовой помощи или профессиональным услугам.
+              </p>
+              <Button size="lg" className="rounded-full gap-2">
+                <Icon name="Handshake" size={20} />
+                Связаться с нами
+              </Button>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Visit Booking Section */}
-      <section id="visit" className="py-20 px-4 bg-gradient-to-b from-secondary/10 to-background">
+      <section id="visit" className="py-20 px-4 bg-secondary/20">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Запись на посещение</h2>
