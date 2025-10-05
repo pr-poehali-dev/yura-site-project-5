@@ -5,6 +5,7 @@ import AnimalCard from '@/components/sections/AnimalCard';
 import NewsCard from '@/components/sections/NewsCard';
 import Footer from '@/components/sections/Footer';
 import VisitForm from '@/components/sections/VisitForm';
+import EducationForm from '@/components/sections/EducationForm';
 import { animals } from '@/data/animalsData';
 import { testimonials, newsItems, helpItems, services, galleryImages, faqItems, volunteerRequirements, sponsors } from '@/data/staticData';
 import type { AnimalType } from '@/data/animalsData';
@@ -362,20 +363,27 @@ export default function Index() {
             </Card>
           </div>
 
-          <Card className="p-8 max-w-4xl mx-auto bg-primary/5">
-            <div className="text-center">
-              <Icon name="GraduationCap" size={48} className="text-primary mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Расписание обучения</h3>
-              <p className="text-muted-foreground mb-6">
-                Лекции и практические занятия проходят каждую субботу с 14:00 до 17:00. 
-                Регистрация обязательна. После прохождения курса выдаётся сертификат волонтёра.
-              </p>
-              <Button size="lg" className="rounded-full gap-2">
-                <Icon name="Calendar" size={20} />
-                Записаться на обучение
-              </Button>
-            </div>
-          </Card>
+          <div className="mb-12">
+            <Card className="p-8 max-w-4xl mx-auto bg-primary/5">
+              <div className="text-center">
+                <Icon name="GraduationCap" size={48} className="text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-4">Расписание обучения</h3>
+                <p className="text-muted-foreground">
+                  Лекции и практические занятия проходят каждую субботу с 14:00 до 17:00. 
+                  Регистрация обязательна. После прохождения курса выдаётся сертификат волонтёра.
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold mb-4">Форма записи</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+              Заполните форму ниже, и мы свяжемся с вами для подтверждения участия в программе обучения
+            </p>
+          </div>
+          
+          <EducationForm />
         </div>
       </section>
 
